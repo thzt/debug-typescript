@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // 启动调试 tsc
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug tsc",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+
+      // tsc 调试端口号
+      // 与 package.json 中的 debug scripts --inspect-brk 保持一致
+      "port": 9001,
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "stopOnEntry": true,
+    },
+
+    // attach 到 tsserver
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "attach to tsserver",
+
+      // tsserver 调试端口号
+      // 与 debug-tsserver/client.js 中的 --inspect-brk 保持一致
+      "port": 9002,
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+  ]
+}

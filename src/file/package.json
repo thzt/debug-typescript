@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "debug": "node --inspect-brk=9001 bin/tsc debug/index.ts"
+  }
+}

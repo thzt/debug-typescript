@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // 启动调试 tsserver
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug tsserver: client",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/index.js"
+    },
+  ]
+}
