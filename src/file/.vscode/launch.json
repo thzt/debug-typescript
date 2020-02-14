@@ -34,5 +34,17 @@
         "<node_internals>/**"
       ]
     },
+
+    // 调试 watch
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug watch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/debug-watch/index.js",
+      "stopOnEntry": true,
+    },
   ]
 }

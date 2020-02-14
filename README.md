@@ -46,13 +46,17 @@ debug-tsserver_client/index.js
 （1）调试 tsc
 + VSCode 打开 TypeScript 根目录  
 选择 `debug tsc` 进行调试
-
+  
 （2）调试 tsserver
 + 一个 VSCode 实例打开 `{TypeScriptRoot}/debug-tsserver_client/`  
 选择 `debug tsserver: client` 启动调试  
-
+  
 + 一个 VSCode 实例打开 `{TypeScriptRoot}`  
 选择 `attach to tsserver` 调试 tsserver 子进程  
+  
+（3）调试 watch  
++ VSCode 打开 TypeScript 根目录  
+选择 `debug watch` 进行调试  
 
 - - -
 

@@ -34,6 +34,9 @@ const copyVSCodeFiles = async () => {
     // 调试 tsserver 的客户端配置
     'debug-tsserver_client/.vscode/launch.json',
     'debug-tsserver_client/index.js',
+
+    // 调试 watch 用的代码
+    'debug-watch/index.js',
   ];
 
   for (const file of files) {
